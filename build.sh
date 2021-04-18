@@ -16,5 +16,6 @@ if [ ! -d "/home/$USER/kernel-inwatch-out" ]; then
 fi
 
 #make the zImage
+make O="/home/$USER/kernel-inwatch-out" mrproper
 make O="/home/$USER/kernel-inwatch-out" in901_defconfig
 make O="/home/$USER/kernel-inwatch-out"
